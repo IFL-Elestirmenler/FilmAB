@@ -4,7 +4,7 @@ Verilen filmlere göre film önerisinde bulunan bir öneri robotudur.
 ### Ali Batu ADA ###
 Takım Kaptanı
 
-### Fahriye Gül Olur ###
+### Fahriye Gül OLUR ###
 Takım Üyesi
 
 ### Sertaç ATEŞ ###
