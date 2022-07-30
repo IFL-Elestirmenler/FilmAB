@@ -19,7 +19,7 @@ Veri kümesi olarak [wiki_movie_plots_deduped.csv](https://www.kaggle.com/datase
 | Çıkış Yılı        | Filmin yayınlandığı yıl                                               |            0           |         0         |       34886         |
 | Orijinal İsmi     | Film başlığı                                                          |            2           |         0         |       34886         |
 | Yapıldığı Ülke    | Filmin kökeni (ör. Amerikan, Bollywood, Tamil vb.)                    |            0           |         0         |       34886         |
-| Yönetmeni         | Direktör(ler)                                                         |           1124         |         0         |       34886         |
+| Yönetmeni         | Yönetmen(ler)                                                         |           1124         |         0         |       34886         |
 | Oyuncu Kadrosu    | Baş aktör ve aktrisler                                                |            1           |        1422       |       33464         |
 | Türü              | Film Tür(ler)i                                                        |            0           |         0         |       34886         |
 | Veri Kaynağı      | Konu açıklamasının çıkarıldığı Wikipedia sayfasının URL'si            |            0           |         0         |       34886         |
