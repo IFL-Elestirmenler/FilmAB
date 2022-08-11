@@ -32,3 +32,14 @@ Veri kümesi olarak [wiki_movie_plots_deduped.csv](https://www.kaggle.com/datase
 | Türü              | Film Tür(ler)i                                                        |            0           |         0         |       34886         |
 | Veri Kaynağı      | Konu açıklamasının çıkarıldığı Wikipedia sayfasının URL'si            |            0           |         0         |       34886         |
 | Olay Dizisi       | Film konusunun uzun biçimli açıklaması (UYARI: Spoiler içerebilir!!!) |            0           |         0         |       34886         | 
+
+# projemizin Ara Yüzü
+Karşılama ekranında tavsiye türünü seçiyorsunuz seçiminize göre ilgili ekrana geçip istenilenleri yazıp film önerilerimizi görüyorsunuz. Umarız hoşunuza gider.
+
+
+![image](https://user-images.githubusercontent.com/109215656/184126090-d1f665e3-c092-4608-9d27-69e260eb38d2.png)
+
+![image](https://user-images.githubusercontent.com/109215656/184126290-341b8715-3a5a-4396-8605-e5f0af92a945.png)
+
+![image](https://user-images.githubusercontent.com/109215656/184126382-f582cccf-1ad3-497c-9f7a-31c5456db2a7.png)
+
