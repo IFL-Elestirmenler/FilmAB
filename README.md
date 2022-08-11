@@ -33,7 +33,7 @@ Veri kümesi olarak [wiki_movie_plots_deduped.csv](https://www.kaggle.com/datase
 | Veri Kaynağı      | Konu açıklamasının çıkarıldığı Wikipedia sayfasının URL'si            |            0           |         0         |       34886         |
 | Olay Dizisi       | Film konusunun uzun biçimli açıklaması (UYARI: Spoiler içerebilir!!!) |            0           |         0         |       34886         | 
 
-# projemizin Ara Yüzü
+# Projemizin Ara Yüzü
 Karşılama ekranında tavsiye türünü seçiyorsunuz seçiminize göre ilgili ekrana geçip istenilenleri yazıp film önerilerimizi görüyorsunuz. Umarız hoşunuza gider.
 
 
