@@ -34,7 +34,7 @@ Veri kümesi olarak [wiki_movie_plots_deduped.csv](https://www.kaggle.com/datase
 | Olay Dizisi       | Film konusunun uzun biçimli açıklaması (UYARI: Spoiler içerebilir!!!) |            0           |         0         |       34886         | 
 
 # Projemizin Ara Yüzü
-Karşılama ekranında tavsiye türünü seçiyorsunuz seçiminize göre ilgili ekrana geçip istenilenleri yazıp film önerilerimizi görüyorsunuz. Umarız hoşunuza gider.
+Karşılama ekranında tavsiye türünü seçiyorsunuz. Sonra seçiminize göre ilgili ekrana geçip istenilenleri yazarak film önerilerimizi görüyorsunuz. Umarız hoşunuza gider.
 
 
 ![image](https://user-images.githubusercontent.com/109215656/184126090-d1f665e3-c092-4608-9d27-69e260eb38d2.png)
