@@ -1,4 +1,4 @@
-![Logo]([https://github.com/IFL-Elestirmenler/FilmAB/blob/main/logo.png])
+![Logo](https://github.com/IFL-Elestirmenler/FilmAB/blob/main/logo.png)
 # FilmAB - İFL Eleştirmenler | Code Of Conduct
 
 Bu doküman, Teknofest 2022 Türkçe Doğal Dil İşleme yarışması kapsamındaki Serbest Kategoride çalışan FilmAB - İFL Eleştirmenler ekibinin resmi Github hesabındaki Takım Üyesi - Takım Üyesi, Takım Üyesi - Katkıda Bulunan Kişiler ve Katkıda Bulunan Kişiler - Katkıda Bulunan Kişiler arasında kabul edilmiş kurallar bütünlüğünden oluşmaktadır.
