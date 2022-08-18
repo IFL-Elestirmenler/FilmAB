@@ -1,0 +1,15 @@
+pandas          ==  1.4.3    > asıl
+google colab    ==  1.0.0    > asıl
+txtai           ==  4.6.0    > test
+googletrans     ==  3.1.0a0  > asıl
+tkinter         ==  3.12.0a0 > asıl ve test 
+PIL             ==  1.1.7    > asıl
+tensorflow      ==  2.9.1    > asıl
+psutil          ==  5.9.1    > test
+zemberek-python ==  0.1.3    > test
+snowballstemmer ==  2.2.0    > test
+nltk            ==  3.7      > asıl ve test 
+TurkishStemmer  ==  1.3      > asıl
+trtokenizer     ==  0.0.3    > asıl
+sklearn         ==  0.0      > asıl ve test 
+nvidia-smi      ==  0.1.3    > test
