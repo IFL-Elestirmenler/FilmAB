@@ -144,15 +144,16 @@ DOSYA ADI: [filmOzetleriVeriKumesi_TURKCE.csv](https://github.com/IFL-Elestirmen
 
 ![image](https://user-images.githubusercontent.com/109214557/185698302-ff5df900-b348-440a-89ea-4d1762feddd4.png)
 
-Kaynaklar:
+**Eksik Kalan Kısmı Araştırmak için Önerilerimiz:**
 
-https://goodboychan.github.io/python/datacamp/natural_language_processing/2020/07/17/04-TF-IDF-and-similarity-scores.html
-https://leimao.github.io/blog/Cosine-Similarity-VS-Pearson-Correlation-Coefficient/
-https://towardsdatascience.com/17-types-of-similarity-and-dissimilarity-measures-used-in-data-science-3eb914d2681
-https://towardsdatascience.com/9-distance-measures-in-data-science-918109d069fa
-https://scikit-learn.org/stable/modules/metrics.html
-https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise_distances.html
-https://docs.scipy.org/doc/scipy/reference/spatial.distance.html
+- https://goodboychan.github.io/python/datacamp/natural_language_processing/2020/07/17/04-TF-IDF-and-similarity-scores.html
+- https://leimao.github.io/blog/Cosine-Similarity-VS-Pearson-Correlation-Coefficient/
+- https://towardsdatascience.com/17-types-of-similarity-and-dissimilarity-measures-used-in-data-science-3eb914d2681
+- https://towardsdatascience.com/9-distance-measures-in-data-science-918109d069fa
+- https://scikit-learn.org/stable/modules/metrics.html
+- https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise_distances.html
+- https://docs.scipy.org/doc/scipy/reference/spatial.distance.html
+
 UYARI: Seçilen yöntemin seyrek dizeyleri (sparse matrices) destekleyip desteklemediğini dokümantasyonundan kontrol ediniz.
 
 # Projemizin Ara Yüzü
