@@ -112,10 +112,48 @@ DOSYA ADI: [filmOzetleriVeriKumesi_TURKCE.csv](https://github.com/IFL-Elestirmen
 
 |**ZEMBEREK'in Analizi**|**Çıktısı**|
 |---|---|
-|WordAnalysis{input='kalem', normalizedInput='kalem', analysisResults=[Kale:Noun, Prop] kale:Noun+A3sg+m:P1sg [kale:Noun] kale:Noun+A3sg+m:P1sg [kalem:Noun] kalem:Noun+A3sg}|Kale|
-|WordAnalysis{input='ilişkilendiremediklerimiz', normalizedInput='ilişkilendiremediklerimiz', analysisResults=[ilişki:Noun] ilişki:Noun+A3sg len:Acquire→Verb dir:Caus→Verb+eme:Unable dik:PastPart→Noun+ler:A3pl+imiz:P1pl}|ilişki|
-|WordAnalysis{input='gözlük', normalizedInput='gözlük', analysisResults=[gözlük:Noun] gözlük:Noun+A3sg [göz:Noun] göz:Noun+A3sg|lük:Ness→Noun+A3sg}|gözlük|
+|WordAnalysis{input='kalem', normalizedInput='kalem', analysisResults=[Kale:Noun, Prop] kale:Noun+A3sg+m:P1sg [kale:Noun] kale:Noun+A3sg+m:P1sg [kalem:Noun] kalem:Noun+A3sg}|kale|
+|WordAnalysis{input='ilişkilendiremediklerimiz', normalizedInput='ilişkilendiremediklerimiz', analysisResults=[ilişki:Noun] ilişki:Noun+A3sg len:Acquire→Verb dir:Caus→Verb+eme:Unable dik:PastPart→Noun+ler:A3pl+imiz:P1pl} |ilişki|
+|WordAnalysis{input='gözlük', normalizedInput='gözlük', analysisResults=[gözlük:Noun] gözlük:Noun+A3sg [göz:Noun] göz:Noun+A3sg lük:Ness→Noun+A3sg}|gözlük|
 |WordAnalysis{input='gözlem', normalizedInput='gözlem', analysisResults=[gözlem:Noun] gözlem:Noun+A3sg [Gözlem:Noun, Prop] gözlem:Noun+A3sg}|gözlem|
+
+***ANALİZ:*** "kale" kelimesinin hatalı olmasına rağmen "ilişki" kelimesinin bulunması bizi ZEMBEREK kullanmaya sevk etti.
+
+|Öz Bulucu|TF IDF Nesnesinin Dizeyinin (Matrisinin) Boyutu (aranilacak_tfidfDizeyi.shape)|
+|---|---|
+|Veri ön işlemleri olmadan|(34886, 225577)|
+|nltk.stem| (34886, 215685)|
+|TurkishStemmer| (34886, 113148)|
+|Zemberek|(34886, 88404)|
+
+***ANALİZ:*** Benzer kökten gelen kelimeler de kullanılan stemmer (öz bulucu / kök bulucu) aracının hassasiyetine göre azalıyor.
+
+### Limonata'yı bir çıktı olarak düşünürsek şeker lazım, su lazım, limon lazım...
+** Proje kapsamında simgeleştirme (tokenizer) olarak nltk ve trtokenizer kullandık. Bilimsel bir çalışma yürütmeden doğal gözlemimiz sonucu Türkçe Doğal Dil İşleme için daha uygun olarak trtokenizer'ı gördük ve onunla devam ettik.
+** Veri kümemizde arama için anlamlı bir farklılık yaratmayacağını düşündüğümüz gereksiz kelimeleri (stopwords) nltk aracının standart stopwords bölümünü kullanarak veri kümemizden sildik/çıkardık.
+
+### TF / IDF Matrisi Oluşturup Kosinüs Benzerliğinden Yararlandık
+** Projemiz kapsamında verilen içeriğe göre (özet veya film ismi) nasıl tavsiyede bulunacağımızı araştırdık. https://www.datacamp.com/tutorial/recommender-systems-python benzer bir çalışma İngilizce olarak yapılmış ve kendi çalışmamıza uyarlamak istedik.
+<br>*** TF (Terim Sıklığı): İlgili kelimenin dökümandaki frekansıdır. Kelimenin dökümanda geçme sayısını, dökümandaki toplam kelime sayısına bölerek elde edilir.
+<br>*** DF (Döküman Sıklığı): TF ile benzemektedir ama bu kez diğer dökümanlara odaklanır. Döküman sayısının ilgili kelimenin geçtiği döküman sayısına bölünmesi ile hesaplanır.
+<br>*** IDF (Ters Döküman Sıklığı): DF değerinin logaritması alınarak hesaplanır.
+<br>** Projemiz kapsamında önce TF/IDF vektörlerinden oluşan bir dizey (matris) oluşturduk ve kelimelerin bu matristeki benzerliklerine bakarak tavsiye sistemimizi ortaya çıkardık.
+
+### PROJEMİZDE EKSİK KALAN KISIM
+*** Olay Dizilerimiz ile arananFilmOzetinin benzerliği üzerinde yeterince çalışamadık. Google Colab PRO hesabı ile sadece cosinüs benzerliğinden faydalandık diğer benzerliklerin karşılaştırmasını yapıp en verimlisini veya en performansı yüksek olanı belirleyemedik.
+
+image.png
+
+Kaynaklar:
+
+https://goodboychan.github.io/python/datacamp/natural_language_processing/2020/07/17/04-TF-IDF-and-similarity-scores.html
+https://leimao.github.io/blog/Cosine-Similarity-VS-Pearson-Correlation-Coefficient/
+https://towardsdatascience.com/17-types-of-similarity-and-dissimilarity-measures-used-in-data-science-3eb914d2681
+https://towardsdatascience.com/9-distance-measures-in-data-science-918109d069fa
+https://scikit-learn.org/stable/modules/metrics.html
+https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise_distances.html
+https://docs.scipy.org/doc/scipy/reference/spatial.distance.html
+UYARI: Seçilen yöntemin seyrek dizeyleri (sparse matrices) destekleyip desteklemediğini dokümantasyonundan kontrol ediniz.
 
 # Projemizin Ara Yüzü
 Karşılama ekranında tavsiye türünü seçiyorsunuz. Sonra seçiminize göre ilgili ekrana geçip istenilenleri yazarak film önerilerimizi görüyorsunuz. Umarız hoşunuza gider.
