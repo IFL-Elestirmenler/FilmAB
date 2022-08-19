@@ -1,3 +1,4 @@
+![Logo](https://github.com/IFL-Elestirmenler/FilmAB/blob/main/logo.png)
 # FilmAB
 Projemiz bir film öneri robotudur. Arayüzümüz açıldığında size iki seçenek sunar:
 1. Özet girerek: Nasıl bir film izlemek istediğinizi belirterek,
