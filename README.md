@@ -4,6 +4,34 @@ Projemiz bir film öneri robotudur. Arayüzümüz açıldığında size iki seç
 2. Birkaç film ismi girerek: Verdiğiniz filmlere benzer film isteyerek, <br>
 veri kümesinde uygun filmi bulabilirsiniz.
 
+# __*Projemizin Çalışması için Gerekenler*__
+
+## Proje Bağlılık Listesi
+
+#### Film Öneri Sisteminin Ara Yüzü ile Çalışması İçin Gerekli Dosyalar:
+
+Dosya Adı|
+---|
+arayuz.py
+filmOzetleriVeriKumesi_TURKCE.csv
+
+#### Film Öneri Sisteminin Ara Yüzü ile Çalışması İçin Gerekli Kurulumlar
+
+Kütüphane Adı | Pip ile İndirme | PyPI sitesi
+------------|------------|-
+pip-21.2.4 | pip install pip | https://pypi.org/project/pip/
+pandas 1.4.3 | pip install pandas | https://pypi.org/project/pandas/
+google colab 1.0.0 | pip install google-colab | https://pypi.org/project/google-colab
+tkinter 3.12.0a0 | pip install tk | Standart Kütüphanedir.
+PIL 1.1.7  | pip install Pillow==1.7.1 | https://pypi.org/project/Pillow/1.7.1/
+tensorflow 2.9.1 | pip install tensorflow | https://pypi.org/project/tensorflow
+psutil 5.9.1  | pip install psutil | https://pypi.org/project/psutil/
+zemberek-python 0.1.3 | pip install zemberek-python | https://pypi.org/project/zemberek-python/
+nltk 3.7 | pip install nltk | https://pypi.org/project/nltk/
+TurkishStemmer 1.3 | pip install TurkishStemmer | https://pypi.org/project/TurkishStemmer/
+sklearn 0.0 | pip install sklearn | https://pypi.org/project/sklearn/
+
+
 ### Ali Batu ADA ###
 Takım Kaptanı
 
