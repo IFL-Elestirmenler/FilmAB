@@ -100,26 +100,22 @@ DOSYA ADI: [filmOzetleriVeriKumesi_TURKCE.csv](https://github.com/IFL-Elestirmen
 ### Limonata'dan Şekeri Çıkar Suyu Çıkar Naneyi Çıkar ÖZÜ LİMON - LİMONA değil LİMO değil LEMAN hiç değil!
 ** - Proje kapsamında **snowballstemmer**, **nltk.stem** (PorterStemmer), **TurkishStemmer**, **nltk.stem** (WordNetLemmatizer), **nltk.stem** (LancasterStemmer) ve **nltk.stem** (RegexpStemmer) ile ZEMBEREK'i karşılaştırdık. Başka bir değişle, **Stemming**, yani kelime eklerini kaldırarak veya değiştirerek bir kelimenin ortak kök biçimini bulmak ve **Lemmatization**, yani bir kelimenin çekimli biçimlerinin temel biçimini bulmak üzerine çalıştık.
 
-|Test edilecek kelimeler: ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem']||
+|STEMMING Yöntemi|STEMMING Aracı|Test kelimeleri: ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem']|
 |--------------------|--------------------|--------------------|
-|Kök Bulma YÖNTEM 1| snowballstemmer | ['kale', 'ilişkilendiremedik', 'gözlük', 'gözle']|
-|Kök Bulma YÖNTEM 2| PorterStemmer | ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem'] |
-|Kök Bulma YÖNTEM 3| TurkishStemmer | ['kalem', 'ilişkilendiremedik', 'gözlük', 'gözle']
-|Kök Bulma YÖNTEM 4| WordNetLemmatizer | ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem']
-|Kök Bulma YÖNTEM 5| LancasterStemmer | ['kalem', 'ilişkilendiremediklerim', 'gözlük', 'gözlem']
-|Kök Bulma YÖNTEM 6| RegexpStemmer | ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem']
-|**Kök Bulma YÖNTEM 7**|ZEMBEREK|['kale', 'ilişki', 'gözlük', 'gözlem']|
+|Kök Bulma YÖNTEM 1| snowballstemmer |Çıktılar: ['kale', 'ilişkilendiremedik', 'gözlük', 'gözle']|
+|Kök Bulma YÖNTEM 2| PorterStemmer |Çıktılar: ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem'] |
+|Kök Bulma YÖNTEM 3| TurkishStemmer |Çıktılar: ['kalem', 'ilişkilendiremedik', 'gözlük', 'gözle']
+|Kök Bulma YÖNTEM 4| WordNetLemmatizer |Çıktılar: ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem']
+|Kök Bulma YÖNTEM 5| LancasterStemmer |Çıktılar: ['kalem', 'ilişkilendiremediklerim', 'gözlük', 'gözlem']
+|Kök Bulma YÖNTEM 6| RegexpStemmer |Çıktılar: ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem']
+|**Kök Bulma YÖNTEM 7**|ZEMBEREK|Çıktılar: ['kale', 'ilişki', 'gözlük', 'gözlem']|
 
-WordAnalysis{input='kalem', normalizedInput='kalem', analysisResults=[Kale:Noun, Prop] kale:Noun+A3sg+m:P1sg [kale:Noun] kale:Noun+A3sg+m:P1sg [kalem:Noun] kalem:Noun+A3sg}
-Kale
-WordAnalysis{input='ilişkilendiremediklerimiz', normalizedInput='ilişkilendiremediklerimiz', analysisResults=[ilişki:Noun] ilişki:Noun+A3sg|len:Acquire→Verb|dir:Caus→Verb+eme:Unable|dik:PastPart→Noun+ler:A3pl+imiz:P1pl}
-ilişki
-WordAnalysis{input='gözlük', normalizedInput='gözlük', analysisResults=[gözlük:Noun] gözlük:Noun+A3sg [göz:Noun] göz:Noun+A3sg|lük:Ness→Noun+A3sg}
-gözlük
-WordAnalysis{input='gözlem', normalizedInput='gözlem', 
-
-analysisResults=[gözlem:Noun] gözlem:Noun+A3sg [Gözlem:Noun, Prop] gözlem:Noun+A3sg}
-gözlem
+|**ZEMBEREK'in Analizi**|**Çıktısı**|
+|---|---|
+|WordAnalysis{input='kalem', normalizedInput='kalem', analysisResults=[Kale:Noun, Prop] kale:Noun+A3sg+m:P1sg [kale:Noun] kale:Noun+A3sg+m:P1sg [kalem:Noun] kalem:Noun+A3sg}|Kale|
+|WordAnalysis{input='ilişkilendiremediklerimiz', normalizedInput='ilişkilendiremediklerimiz', analysisResults=[ilişki:Noun] ilişki:Noun+A3sg len:Acquire→Verb dir:Caus→Verb+eme:Unable dik:PastPart→Noun+ler:A3pl+imiz:P1pl}|ilişki|
+|WordAnalysis{input='gözlük', normalizedInput='gözlük', analysisResults=[gözlük:Noun] gözlük:Noun+A3sg [göz:Noun] göz:Noun+A3sg|lük:Ness→Noun+A3sg}|gözlük|
+|WordAnalysis{input='gözlem', normalizedInput='gözlem', analysisResults=[gözlem:Noun] gözlem:Noun+A3sg [Gözlem:Noun, Prop] gözlem:Noun+A3sg}|gözlem|
 
 # Projemizin Ara Yüzü
 Karşılama ekranında tavsiye türünü seçiyorsunuz. Sonra seçiminize göre ilgili ekrana geçip istenilenleri yazarak film önerilerimizi görüyorsunuz. Umarız hoşunuza gider.
