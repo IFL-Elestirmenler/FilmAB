@@ -5,17 +5,17 @@ Projemiz bir film öneri robotudur. Arayüzümüz açıldığında size iki seç
 2. Birkaç film ismi girerek: Verdiğiniz filmlere benzer film isteyerek, <br>
 veri kümesinde uygun filmi bulabilirsiniz.
 
-### Ali Batu ADA ###
-Takım Kaptanı
+## Ali Batu ADA ##
+**Takım Kaptanı**
 
-### Fahriye Gül OLUR ###
-Takım Üyesi
+## Fahriye Gül OLUR ##
+**Takım Üyesi**
 
-### Sertaç ATEŞ ###
-Danışman Öğretmen
+## Sertaç ATEŞ ##
+**Danışman Öğretmen**
 
-### Saadin OYUCU ###
-Proje Mentörü
+## Saadin OYUCU ##
+**Proje Mentörü**
 
 # __*Projemizin Çalışması için Gerekenler*__
 
