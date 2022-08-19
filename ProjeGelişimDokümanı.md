@@ -9,7 +9,7 @@
 ## FilmAB Projesi - Süreç Yönetim Tablosu
 [FilmAB Projesi - Süreç Yönetim Tablosu](https://github.com/orgs/IFL-Elestirmenler/projects/1/views/1) aracılığıyla projemizin gelişim aşamalarını görebilirsiniz. Neye nasıl karar verdiğimizi hangi konuyu ne zaman tamamladığımızı ve benzer tüm iletişimi görebilirsiniz.
 
-##FilmAB (Film Ara Bul) Sistemi
+## FilmAB (Film Ara Bul) Sistemi
 - Türkçe Veri Kümesi Üretilmesi
 - Türkçe Film Özetleri bulunan bir kaynağa alanyazında (literatürde) rastlamadık.
 - Türkçe Film Özeti İçeren Veri Kümesi Üretilmesi (Huggingface - Doğal Dil İşleme / Çeviri Görevi)
