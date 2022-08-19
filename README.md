@@ -1,5 +1,7 @@
 ![Logo](https://github.com/IFL-Elestirmenler/FilmAB/blob/main/logo.png)
 
+![Proje Ekran Kullanımı](https://github.com/IFL-Elestirmenler/FilmAB/blob/main/FilmAB%20Projesi%20Demo%20-%20Ekran%20Ara%20Y%C3%BCz%C3%BC%20Kullan%C4%B1m%C4%B1.mp4)
+
 # __*Projemizin Çalışması için Gerekenler*__
 
 ## Proje Bağlılık Listesi
