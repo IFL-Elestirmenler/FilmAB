@@ -2,6 +2,14 @@
 
 [FilmAB Projesi Demo - Ekran Ara Yüzü Kullanımı için **buraya** tıklayınız](https://github.com/IFL-Elestirmenler/FilmAB/blob/main/FilmAB%20Projesi%20Demo%20-%20Ekran%20Ara%20Y%C3%BCz%C3%BC%20Kullan%C4%B1m%C4%B1.mp4)
 
+# FilmAB Projemiz
+TeknoFest 2022 Samsun **Türkçe Doğal Dil İşleme Yarışması** kapsamında **Serbest Kategori** alanında Türkçe Veri Kümesi de oluşturduğumuz bir film öneri robotudur.
+Arayüzümüz açıldığında size iki seçenek sunar:
+1. Özet girerek: Nasıl bir film izlemek istediğinizi belirterek,
+2. Birkaç film ismi girerek: Verdiğiniz filmlere benzer film isteyerek,
+veri kümesinde uygun filmi bulabilirsiniz.
+(#Acıkhack2022TDDİ)
+
 # __*Projemizin Çalışması için Gerekenler*__
 
 ## Proje Bağlılık Listesi
