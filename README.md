@@ -31,7 +31,7 @@ filmOzetleriVeriKumesi_TURKCE.csv
 
 Kütüphane Adı | Pip ile İndirme | PyPI sitesi
 ------------|------------|-
-pip-21.2.4 | pip install pip | https://pypi.org/project/pip/
+pip 22.2.2 | **yok** | https://pypi.org/project/pip/
 pandas 1.4.3 | pip install pandas | https://pypi.org/project/pandas/
 google colab 1.0.0 | pip install google-colab | https://pypi.org/project/google-colab
 tkinter 3.12.0a0 | pip install tk | Standart Kütüphanedir.
@@ -53,9 +53,8 @@ wiki_movie_plots_deduped.csv
 #### Film Öneri Sisteminin Veri Kümesinin Türkçeleştirilmesine Katkı Sağlamak İçin Gerekli Kurulumlar
 
 Kütüphane Adı | Pip ile İndirme | PyPI sitesi
-
 ------------|------------|-
-pip-21.2.4 | **yok** | https://pypi.org/project/pip/
+pip 22.2.2 | **yok** | https://pypi.org/project/pip/
 pandas 1.4.3 | pip install pandas | https://pypi.org/project/pandas/
 
 #### Film Öneri Sisteminin ÖZETTEN FİLM BULMASINA Katkı Sağlamak İçin Gerekli Dosyalar:
@@ -69,7 +68,22 @@ filmOzetleriVeriKumesi_TURKCE.csv
 
 Kütüphane Adı | Pip ile İndirme | PyPI sitesi
 ------------|------------|-
-pip-21.2.4 | **yok** | https://pypi.org/project/pip/
+pip 22.2.2 | **yok** | https://pypi.org/project/pip/
+
+#### Film Öneri Sisteminin VERİLEN FİLMLERDEN FİLM BULMASINA Katkı Sağlamak İçin Gerekli Dosyalar:
+
+Dosya Adı|
+---|
+toplam10filmIsmindenOzetlerineBakipBenzerFilmlerinBulunmasi.ipynb
+filmOzetleriVeriKumesi_TURKCE.csv
+
+#### Film Öneri Sisteminin VERİLEN FİLMLERDEN FİLM BULMASINA Katkı Sağlamak İçin Gerekli Kurulumlar
+
+Kütüphane Adı | Pip ile İndirme | PyPI sitesi
+------------|------------|-
+pip 22.2.2 | **yok** | https://pypi.org/project/pip/
+pandas 1.4.3 | pip install pandas | https://pypi.org/project/pandas/
+
 
 # Veri Kümesi
 Veri kümesi olarak [wiki_movie_plots_deduped.csv](https://www.kaggle.com/datasets/jrobischon/wikipedia-movie-plots?resource=download) adlı dosyayı kullandık. Sütun açıklamaları aşağıda tablo halinde verilmiştir:
