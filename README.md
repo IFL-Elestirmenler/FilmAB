@@ -100,7 +100,7 @@ DOSYA ADI: [filmOzetleriVeriKumesi_TURKCE.csv](https://github.com/IFL-Elestirmen
 ### Limonata'dan Şekeri Çıkar Suyu Çıkar Naneyi Çıkar ÖZÜ LİMON - LİMONA değil LİMO değil LEMAN hiç değil!
 ** - Proje kapsamında **snowballstemmer**, **nltk.stem** (PorterStemmer), **TurkishStemmer**, **nltk.stem** (WordNetLemmatizer), **nltk.stem** (LancasterStemmer) ve **nltk.stem** (RegexpStemmer) ile ZEMBEREK'i karşılaştırdık. Başka bir değişle, **Stemming**, yani kelime eklerini kaldırarak veya değiştirerek bir kelimenin ortak kök biçimini bulmak ve **Lemmatization**, yani bir kelimenin çekimli biçimlerinin temel biçimini bulmak üzerine çalıştık.
 
-|Test edilecek kelimeler: ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem']|||
+|Test edilecek kelimeler: ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem']||
 |--------------------|--------------------|--------------------|
 |Kök Bulma YÖNTEM 1| snowballstemmer | ['kale', 'ilişkilendiremedik', 'gözlük', 'gözle']|
 |Kök Bulma YÖNTEM 2| PorterStemmer | ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem'] |
