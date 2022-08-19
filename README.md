@@ -103,11 +103,11 @@ DOSYA ADI: [filmOzetleriVeriKumesi_TURKCE.csv](https://github.com/IFL-Elestirmen
 |Test edilecek kelimeler: ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem']|||
 |--------------------|--------------------|--------------------|
 |Kök Bulma YÖNTEM 1| snowballstemmer | ['kale', 'ilişkilendiremedik', 'gözlük', 'gözle']|
-|Kök Bulma YÖNTEM 2| snowballstemmer | ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem'] |
-|Kök Bulma YÖNTEM 3| snowballstemmer | ['kalem', 'ilişkilendiremedik', 'gözlük', 'gözle']
-|Kök Bulma YÖNTEM 4| snowballstemmer | ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem']
-|Kök Bulma YÖNTEM 5| snowballstemmer | ['kalem', 'ilişkilendiremediklerim', 'gözlük', 'gözlem']
-|Kök Bulma YÖNTEM 6| snowballstemmer | ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem']
+|Kök Bulma YÖNTEM 2| PorterStemmer | ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem'] |
+|Kök Bulma YÖNTEM 3| TurkishStemmer | ['kalem', 'ilişkilendiremedik', 'gözlük', 'gözle']
+|Kök Bulma YÖNTEM 4| WordNetLemmatizer | ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem']
+|Kök Bulma YÖNTEM 5| LancasterStemmer | ['kalem', 'ilişkilendiremediklerim', 'gözlük', 'gözlem']
+|Kök Bulma YÖNTEM 6| RegexpStemmer | ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem']
 |**Kök Bulma YÖNTEM 7**|ZEMBEREK|['kale', 'ilişki', 'gözlük', 'gözlem']|
 
 WordAnalysis{input='kalem', normalizedInput='kalem', analysisResults=[Kale:Noun, Prop] kale:Noun+A3sg+m:P1sg [kale:Noun] kale:Noun+A3sg+m:P1sg [kalem:Noun] kalem:Noun+A3sg}
