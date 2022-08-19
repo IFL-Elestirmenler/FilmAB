@@ -1,21 +1,4 @@
 ![Logo](https://github.com/IFL-Elestirmenler/FilmAB/blob/main/logo.png)
-# FilmAB
-Projemiz bir film öneri robotudur. Arayüzümüz açıldığında size iki seçenek sunar:
-1. Özet girerek: Nasıl bir film izlemek istediğinizi belirterek,
-2. Birkaç film ismi girerek: Verdiğiniz filmlere benzer film isteyerek, <br>
-veri kümesinde uygun filmi bulabilirsiniz.
-
-## Ali Batu ADA ##
-**Takım Kaptanı**
-
-## Fahriye Gül OLUR ##
-**Takım Üyesi**
-
-## Sertaç ATEŞ ##
-**Danışman Öğretmen**
-
-## Saadin OYUCU ##
-**Proje Mentörü**
 
 # __*Projemizin Çalışması için Gerekenler*__
 
