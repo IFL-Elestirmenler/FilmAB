@@ -108,14 +108,18 @@ DOSYA ADI: [filmOzetleriVeriKumesi_TURKCE.csv](https://github.com/IFL-Elestirmen
 |Kök Bulma YÖNTEM 4| snowballstemmer | ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem']
 |Kök Bulma YÖNTEM 5| snowballstemmer | ['kalem', 'ilişkilendiremediklerim', 'gözlük', 'gözlem']
 |Kök Bulma YÖNTEM 6| snowballstemmer | ['kalem', 'ilişkilendiremediklerimiz', 'gözlük', 'gözlem']
-|**Kök Bulma YÖNTEM 7**|ZEMBEREK|WordAnalysis{input='kalem', normalizedInput='kalem', analysisResults=[Kale:Noun, Prop] kale:Noun+A3sg+m:P1sg [kale:Noun] kale:Noun+A3sg+m:P1sg [kalem:Noun] kalem:Noun+A3sg}
+|**Kök Bulma YÖNTEM 7**|ZEMBEREK|['kale', 'ilişki', 'gözlük', 'gözlem']|
+
+WordAnalysis{input='kalem', normalizedInput='kalem', analysisResults=[Kale:Noun, Prop] kale:Noun+A3sg+m:P1sg [kale:Noun] kale:Noun+A3sg+m:P1sg [kalem:Noun] kalem:Noun+A3sg}
 Kale
 WordAnalysis{input='ilişkilendiremediklerimiz', normalizedInput='ilişkilendiremediklerimiz', analysisResults=[ilişki:Noun] ilişki:Noun+A3sg|len:Acquire→Verb|dir:Caus→Verb+eme:Unable|dik:PastPart→Noun+ler:A3pl+imiz:P1pl}
 ilişki
 WordAnalysis{input='gözlük', normalizedInput='gözlük', analysisResults=[gözlük:Noun] gözlük:Noun+A3sg [göz:Noun] göz:Noun+A3sg|lük:Ness→Noun+A3sg}
 gözlük
-WordAnalysis{input='gözlem', normalizedInput='gözlem', analysisResults=[gözlem:Noun] gözlem:Noun+A3sg [Gözlem:Noun, Prop] gözlem:Noun+A3sg}
-gözlem|
+WordAnalysis{input='gözlem', normalizedInput='gözlem', 
+
+analysisResults=[gözlem:Noun] gözlem:Noun+A3sg [Gözlem:Noun, Prop] gözlem:Noun+A3sg}
+gözlem
 
 # Projemizin Ara Yüzü
 Karşılama ekranında tavsiye türünü seçiyorsunuz. Sonra seçiminize göre ilgili ekrana geçip istenilenleri yazarak film önerilerimizi görüyorsunuz. Umarız hoşunuza gider.
