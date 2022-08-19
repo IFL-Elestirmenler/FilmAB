@@ -84,9 +84,24 @@ Kütüphane Adı | Pip ile İndirme | PyPI sitesi
 pip 22.2.2 | **yok** | https://pypi.org/project/pip/
 pandas 1.4.3 | pip install pandas | https://pypi.org/project/pandas/
 
+## FilmAB (Film Ara Bul) Sistemi
+### Türkçe Veri Kümesi Üretilmesi
+**- Türkçe Film Özetleri bulunan bir kaynağa alanyazında (literatürde) rastlamadık.**<br>
+IMDb Veri Kümeleri (https://www.imdb.com/interfaces/) ile NetFlix (https://www.kaggle.com/datasets/shivamb/netflix-shows), Amazon Prime (https://www.kaggle.com/datasets/shivamb/amazon-prime-movies-and-tv-shows), Disney+ (https://www.kaggle.com/datasets/shivamb/disney-movies-and-tv-shows) ve Hulu (https://www.kaggle.com/datasets/shivamb/hulu-movies-and-tv-shows) gibi platformların veri kümelerini incelediğimizde FİLM ÖZETLERİNE yer verilmediğini fark ettik. Wikipedia Movie Plots (https://www.kaggle.com/datasets/jrobischon/wikipedia-movie-plots) ve MPST (https://www.kaggle.com/datasets/cryptexcode/mpst-movie-plot-synopses-with-tags) isimli iki veri kümesinde İNGİLİZCE özetlere rastladık ve öncelikli olarak TÜRKÇE FİLM ÖZETİ içeren bir veri kümesi hazırlamaya karar verdik.
+**- Türkçe Film Özeti İçeren Veri Kümesi Üretilmesi (Huggingface - Doğal Dil İşleme / Çeviri Görevi)**<br>
 
-# Veri Kümesi
-Veri kümesi olarak [wiki_movie_plots_deduped.csv](https://www.kaggle.com/datasets/jrobischon/wikipedia-movie-plots?resource=download) adlı dosyayı kullandık. Sütun açıklamaları aşağıda tablo halinde verilmiştir:
+Sınırlı kelimeyi uzun zamanda çeviren Dört Model (Helsinki-NLP/opus-mt-en-mul, Helsinki-NLP/opus-mt-tc-big-en-tr, Helsinki-NLP/opus-tatoeba-en-tr ve Helsinki-NLP/opus-mt-en-trk) dışında bir kaynak ve çözüm bulamayınca Huggingface - Doğal Dil İşleme / Çeviri Görevi modellerini kullanmaktan vazgeçtik.
+**- Türkçe Film Özeti İçeren Veri Kümesi Üretilmesi (TXTAI)**<br>
+Bu kütüphane ile hem doğru çeviri hem de karakter sayısı sınırı sorunlarını yaşamadık ama süre ile ilgili problem devam ediyordu. Seçtiğimiz wikipedia-movie-plots veri kümesinde 35000 civarı film olması ve sadece çevirinin 3 veya daha fazla tam gün süreceğini düşünerek bu şekilde çözüm bulmaktan da vazgeçtik.
+**- Türkçe Film Özeti İçeren Veri Kümesi Üretilmesi (Google Translate)**<br>
+İlk çıktığında herkesin kalbini kırmasına rağmen mevcut hali ile kalbimizi kazanan google translate bize ilk başlarda naz yaptı. Kararlı sürümünün (3.0.0) uyum sorununu stackoverflowdan öğrendiğimiz yöntem ile ([https://stackoverflow.com/](https://stackoverflow.com/questions/52455774/googletrans-stopped-working-with-error-nonetype-object-has-no-attribute-group)) googletrans 3.1.0a0 kurarak çözdük.
+**- Türkçe Film Özeti İçeren Veri Kümesi Üretilmesi (SORUN)**<br>
+Google Colab Pro hesabı ile yaklaşık 4 saatte tamamlanan çevirilerden sonra veri kümemizin kirli olduğunu fark ettik. [1] ve [2] gibi alıntı bağlantılarını temizlemediğimizi farkettik. Bir sonraki çalışmamızda veri ön işlemlerine ve veri hazırlık işlemlerine daha dikkat etmemiz gerektiği dersini çıkartıp mevcut kirli veri kümemizi temizledik.
+**- Türkçe Film Özeti İçeren Veri Kümesi Üretilmesi (ÜRETİLEN VERİ KÜMESİ - filmOzetleriVeriKumesi_TURKCE.csv)**<br>
+Ham veri kümesi olarak [wiki_movie_plots_deduped.csv](https://www.kaggle.com/datasets/jrobischon/wikipedia-movie-plots?resource=download) adlı dosyayı kullandık. ürettiğimiz veri kümesinin detayları aşağıda tablo halinde verilmiştir:
+
+DOSYA ADI: [filmOzetleriVeriKumesi_TURKCE.csv](https://github.com/IFL-Elestirmenler/FilmAB/tree/main/Olu%C5%9Fturdu%C4%9Fumuz%20T%C3%BCrk%C3%A7e%20Veri%20K%C3%BCmeleri)
+
 
 | İsim              | Açıklama                                                              | Satır Sayısı (Unknown) |Satır Sayısı (NaN) | Satır Sayısı (Dolu) |
 | ----------------- | --------------------------------------------------------------------- | ---------------------- | ----------------- | ------------------- |
@@ -97,7 +112,7 @@ Veri kümesi olarak [wiki_movie_plots_deduped.csv](https://www.kaggle.com/datase
 | Oyuncu Kadrosu    | Baş aktör ve aktrisler                                                |            1           |        1422       |       33464         |
 | Türü              | Film Tür(ler)i                                                        |            0           |         0         |       34886         |
 | Veri Kaynağı      | Konu açıklamasının çıkarıldığı Wikipedia sayfasının URL'si            |            0           |         0         |       34886         |
-| Olay Dizisi       | Film konusunun uzun biçimli açıklaması (UYARI: Spoiler içerebilir!!!) |            0           |         0         |       34886         | 
+| Olay Dizisi       | Film konusunun uzun biçimli açıklaması (UYARI: Spoiler içerebilir!!!) |            0           |         0         |       34886         |
 
 
 # Projemizin Ara Yüzü
