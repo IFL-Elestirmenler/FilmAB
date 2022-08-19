@@ -142,7 +142,7 @@ DOSYA ADI: [filmOzetleriVeriKumesi_TURKCE.csv](https://github.com/IFL-Elestirmen
 ### PROJEMİZDE EKSİK KALAN KISIM
 *** Olay Dizilerimiz ile arananFilmOzetinin benzerliği üzerinde yeterince çalışamadık. Google Colab PRO hesabı ile sadece cosinüs benzerliğinden faydalandık diğer benzerliklerin karşılaştırmasını yapıp en verimlisini veya en performansı yüksek olanı belirleyemedik.
 
-image.png
+![image](https://user-images.githubusercontent.com/109214557/185698302-ff5df900-b348-440a-89ea-4d1762feddd4.png)
 
 Kaynaklar:
 
