@@ -166,3 +166,18 @@ Karşılama ekranında tavsiye türünü seçiyorsunuz. Sonra seçiminize göre 
 
 ![image](https://user-images.githubusercontent.com/109215656/184126382-f582cccf-1ad3-497c-9f7a-31c5456db2a7.png)
 
+## Katkılarından Ötürü Teşekkür Ederiz
+- Sayın Saadin OYUCU | Mentör |
+- Değerli Sertaç ATEŞ | Danışman Öğretmen |
+
+## Takım Üyeleri
+- Ali Batu ADA   | Takım Kaptanı | [allbattu](https://github.com/allbattu)
+- Fahriye Gül OLUR  | Takım Üyesi | [fahriyegulolur](https://github.com/fahriyegulolur)
+- Sertaç ATEŞ             | Danışman Öğretmen | [sertacates](https://github.com/sertacates)
+
+## Hakkımızda
+**taMAM | Tarayıcı Mevzuat Arama Motoru**, **İFL Garajı 10100** takımı tarafından **Teknofest 2022 Türkçe Doğal Dil İşleme Yarışması** kapsamında düzenlenen Kamuda Arama Motoru Geliştirme alanında yarışması için oluşturulan bir NLP projesidir.
+
+Takımımız İzmir Fen Lisesi 11. Sınıf öğrencilerinden oluşmakta olup adımız olan İFL Garajı 10100 günümüz Arama Motorları arasında akla ilk gelen isimlerden biri olan **Google şirketinin kuruluşuna** ve **Googol** sayısına bir göndermedir.
+
+taMAM projesi **Jupyter Notebook'la yazılmış dökümantasyonlar**, **Python** diliyle hazırlanmış olan ana kodumuz ve Community Standart'la ilgli olan **MarkDown dosyalarından** oluşmaktadır. Proje adı ise Teknofest Organizatörleri tarafından yarışmaya hazırlanmamız için bize verilen Veri Setin'den **veri elde etme şeklimizle** oluşturulmuş bir kısaltmadır.
