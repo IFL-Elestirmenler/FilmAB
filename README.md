@@ -4,6 +4,18 @@ Projemiz bir film öneri robotudur. Arayüzümüz açıldığında size iki seç
 2. Birkaç film ismi girerek: Verdiğiniz filmlere benzer film isteyerek, <br>
 veri kümesinde uygun filmi bulabilirsiniz.
 
+### Ali Batu ADA ###
+Takım Kaptanı
+
+### Fahriye Gül OLUR ###
+Takım Üyesi
+
+### Sertaç ATEŞ ###
+Danışman Öğretmen
+
+### Saadin OYUCU ###
+Proje Mentörü
+
 # __*Projemizin Çalışması için Gerekenler*__
 
 ## Proje Bağlılık Listesi
@@ -31,22 +43,6 @@ nltk 3.7 | pip install nltk | https://pypi.org/project/nltk/
 TurkishStemmer 1.3 | pip install TurkishStemmer | https://pypi.org/project/TurkishStemmer/
 sklearn 0.0 | pip install sklearn | https://pypi.org/project/sklearn/
 
-
-### Ali Batu ADA ###
-Takım Kaptanı
-
-### Fahriye Gül OLUR ###
-Takım Üyesi
-
-### Sertaç ATEŞ ###
-Danışman Öğretmen
-
-### Saadin OYUCU ###
-Proje Mentörü
-
-
-Bu şekilde readme.md dosyasını güncelleyelim.
-
 # Veri Kümesi
 Veri kümesi olarak [wiki_movie_plots_deduped.csv](https://www.kaggle.com/datasets/jrobischon/wikipedia-movie-plots?resource=download) adlı dosyayı kullandık. Sütun açıklamaları aşağıda tablo halinde verilmiştir:
 
@@ -60,6 +56,21 @@ Veri kümesi olarak [wiki_movie_plots_deduped.csv](https://www.kaggle.com/datase
 | Türü              | Film Tür(ler)i                                                        |            0           |         0         |       34886         |
 | Veri Kaynağı      | Konu açıklamasının çıkarıldığı Wikipedia sayfasının URL'si            |            0           |         0         |       34886         |
 | Olay Dizisi       | Film konusunun uzun biçimli açıklaması (UYARI: Spoiler içerebilir!!!) |            0           |         0         |       34886         | 
+
+#### Film Öneri Sisteminin Veri Kümesinin Türkçeleştirilmesine Katkı Sağlamak İçin Gerekli Dosyalar:
+
+Dosya Adı|
+---|
+VeriKumesininTurkcelestirilmesi.ipynb
+wiki_movie_plots_deduped.csv
+
+#### Film Öneri Sisteminin Veri Kümesinin Türkçeleştirilmesine Katkı Sağlamak İçin Gerekli Kurulumlar
+
+Kütüphane Adı | Pip ile İndirme | PyPI sitesi
+
+------------|------------|-
+pip-21.2.4 | **yok** | https://pypi.org/project/pip/
+pandas 1.4.3 | pip install pandas | https://pypi.org/project/pandas/
 
 # Projemizin Ara Yüzü
 Karşılama ekranında tavsiye türünü seçiyorsunuz. Sonra seçiminize göre ilgili ekrana geçip istenilenleri yazarak film önerilerimizi görüyorsunuz. Umarız hoşunuza gider.
